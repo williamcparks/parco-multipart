@@ -3,6 +3,10 @@ name = "parco-multipart"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
+description = "Parco Lob"
+keywords = ["parco", "multipart"]
+homepage = "https://github.com/williamcparks/parco-multipart"
+repository = "https://github.com/williamcparks/parco-multipart"
 readme = "README.md"
 
 [dependencies]
