@@ -1,9 +1,9 @@
 [package]
 name = "parco-multipart"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
-description = "Parco Lob"
+description = "Parco Multipart"
 keywords = ["parco", "multipart"]
 homepage = "https://github.com/williamcparks/parco-multipart"
 repository = "https://github.com/williamcparks/parco-multipart"
