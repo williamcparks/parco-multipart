@@ -1,0 +1,10 @@
+[package]
+name = "parco-multipart"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+mime = "0.3.17"
+thiserror = "2.0.17"
