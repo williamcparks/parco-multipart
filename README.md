@@ -5,7 +5,7 @@ Multi part message parsing in rust
 ```rust,ignore
 use parco_multipart::Message;
 
-const MSG: &str = r##"
+let msg = r##"
 --abc123
 Content-Type: text/plain
 
@@ -15,7 +15,7 @@ Content-Type: text/plain
 
 This is part 2.
 --abc123--
-"##;
+"##.trim();
 
 let message = Message::try_parse(MSG).unwrap();
 
