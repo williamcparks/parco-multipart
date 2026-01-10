@@ -17,7 +17,7 @@ This is part 2.
 --abc123--
 "##.trim();
 
-let message = Message::try_parse(MSG).unwrap();
+let message = Message::try_parse(msg).unwrap();
 
 for part in message.iter() {
     println!("{part:#?}");
