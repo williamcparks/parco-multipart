@@ -1,4 +1,4 @@
-use crate::Message;
+use crate::{Message, StreamMessage};
 
 const MSG_ONE: &str = r##"
 --abc123
@@ -68,6 +68,17 @@ fn test() {
         let message = Message::try_parse(msg).unwrap();
 
         for part in message.iter() {
+            println!("{part:#?}");
+        }
+    }
+
+    for msg in msgs {
+        let msg = msg.trim();
+
+        let message = StreamMessage::try_parse(msg).unwrap();
+
+        for part_result in message {
+            let part = part_result.unwrap();
             println!("{part:#?}");
         }
     }

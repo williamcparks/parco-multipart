@@ -1,12 +1,15 @@
 use crate::{
-    Message, Part,
+    Message, MultiPartError, Part,
     boundaries::{Boundaries, BoundaryError},
-    error::MultiPartError,
     try_parse::part::PartError,
 };
 
 impl<'a> Message<'a> {
     /// Attempts to parse a raw multipart message into a `Message` containing its `Part`s.
+    ///
+    /// ## Streaming
+    ///
+    /// if you want to stream the parts into an iterator use [`crate::StreamMessage`] instead
     ///
     /// This function:
     /// 1. Infers the multipart boundary from the input string.

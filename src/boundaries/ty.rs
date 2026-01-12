@@ -1,4 +1,4 @@
-use crate::error::MultiPartError;
+use crate::MultiPartError;
 
 use super::{BoundaryError, Cursor};
 
